@@ -1,0 +1,49 @@
+@media screen and (max-width: 767px) {
+    #gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    #filter-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (hover: none) {
+    .gallery-item:hover {
+        transform: none;
+    }
+
+    .filter-btn:hover {
+        transform: none;
+    }
+
+    .theme-toggle-btn:hover {
+        transform: none;
+    }
+}

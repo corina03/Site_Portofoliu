@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="header-content"></div>
+  </header>
+
+  <main>
+    <div id="filter-options"></div>   
+    <div id="gallery-container"></div>
+  </main>
+
+  <div id="modal-container">
+    <div class="modal-content">
+      <button class="modal-close">×</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="theme-toggle">
+    <button class="theme-toggle-btn">
+      <span class="theme-icon"></span>
+    </button>
+  </div>
+
+  <script src="assets/data/gallery-data.js"></script>
+  <script src="scripts/ui-controller.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
